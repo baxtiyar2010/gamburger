@@ -1,0 +1,73 @@
+@import url(../fonts.css);
+
+:root {
+    --RwR: 'Raleway-Regular';
+    --RwB: 'Raleway-Black';
+    --RaB: 'Raleway-Bold';
+    --RwT: 'Raleway-Thin';
+    --RR: 'Roboto-Regular';
+    --RB: 'Roboto-Bold';
+    --black: #0C0C0C;
+    --light__green: #69CF17;
+    --dark__green: #06600F;
+    --linear__green: #69CF17E5;
+    --white: #FFF;
+    --price__green: rgba(105, 207, 23, 0.50);
+    --btn__green: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    --burger-top-black: #292929;
+    --main__bg: #393636;
+}
+
+.burger-list {
+    display: flex;
+    background: var(--burger-top-black);
+    padding: 20px 0;
+    padding-left: 21px;
+    column-gap: 31px;
+}
+
+.burger-list__link {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.burger-block {
+    background: var(--main__bg);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.burger-block__item {
+    background: var(--black);
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+    transition: all 500ms;
+    width: 23.5%;
+}
+
+.burger-block__item:hover {
+    border: 1px solid var(--linear__green);
+}
+
+.burger-item__img {
+    width: 100%;
+}
+
+.burger-item__title {
+    color: var(--white);
+    font-family: var(--RaB);
+    font-size: 19px;
+    line-height: 15px;
+    margin: 15px 0;
+}
+
+.burger-item__text {
+    color: var(--white);
+    font-size: 19px;
+    line-height: 25px;
+}
